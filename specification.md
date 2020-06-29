@@ -11,6 +11,7 @@ In the following description, if a field is not explicitly __REQUIRED__ or descr
 The formats defined by Ultimate TODO are:
 
 | type | format | Comments |
+| :-- | :-- | :-- |
 | string | | |
 | string | date | As defined by `full-date` - RFC3339 |
 | string | date-time | As defined by `date-time` - RFC3339 |
@@ -27,6 +28,7 @@ Throughout the specification `description` fields are noted as supporting Common
 This is the root document object of the [Ultimate TODO document](#1.1-Ultimate-TODO-Document).
 
 | Field Name | Type | Description |
+| :-- | :-- | :-- |
 | version | string | [Semantic Version Number](https://semver.org/spec/v2.0.0.html) denoting the Ultimate TODO document version. |
 | tasks | [Task Object] | __REQUIRED__. Provides a list of all tasks created by a user. |
 
@@ -35,6 +37,7 @@ This is the root document object of the [Ultimate TODO document](#1.1-Ultimate-T
 This object defines a task.
 
 | Field Name | Type | Description |
+| :-- | :-- | :-- |
 | id | string | REQUIRED. A unique identifier for the task. This id _SHALL_ be generated on creation of the task. |
 | name | string | REQUIRED. The title of the task. |
 | description | string | A short description of the task. [CommonMark syntax](https://spec.commonmark.org/) _MAY_ be used for rich text representation. |
